@@ -1,5 +1,5 @@
 function initMap() {
-    var hanoi = {lat: -25.363, lng: 131.044};
+    var Hanoi = {lat:16.463713 , lng:107.590866 };
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: {
