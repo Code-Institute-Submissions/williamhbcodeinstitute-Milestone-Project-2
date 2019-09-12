@@ -1,5 +1,5 @@
 function initMap() {
-    var Hanoi = {lat:16.463713 , lng:107.590866 };
+    var Hanoi = {lat:21.027763 , lng:105.834160 };
     var map = new google.maps.Map(document.getElementById("map"), {
         zoom: 6,
         center: {
@@ -46,6 +46,9 @@ function initMap() {
     },    {
         lat: 16.463713,
         lng: 107.590866,
+    }, {
+         lat: 21.027763,
+         lng: 105.834160,
     }];
     
     var markers = locations.map(function(location, i) {
@@ -57,8 +60,33 @@ function initMap() {
     var markerCluster = new MarkerClusterer(map, markers, {
         imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'
     });
+    var request = {
+          placeId: 'ChIJN1t_tDeuEmsRUsoyG83frY4',
+          fields: ['name', 'formatted_address', 'place_id', 'geometry']
+        };
+
+        var infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+
+        service.getDetails(request, function(place, status) {
+          if (status === google.maps.places.PlacesServiceStatus.OK) {
+            var marker = new google.maps.Marker({
+              map: map,
+              position: place.geometry.location
+            });
+            google.maps.event.addListener(marker, 'click', function() {
+              infowindow.setContent('<div><strong>' + place.name + '</strong><br>' +
+                'Place ID: ' + place.place_id + '<br>' +
+                place.formatted_address + '</div>');
+              infowindow.open(map, this);
+            });
+          }
+        });
+      
 });
 }
+
+
 
 
  
