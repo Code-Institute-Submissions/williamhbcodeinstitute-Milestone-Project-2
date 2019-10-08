@@ -1,5 +1,42 @@
-#map {
-    min-height: 360px;
-    margin: 0;
-    padding: 0;
+@import url("https://fonts.googleapis.com/css?family=Dosis|Roboto&display=swap");
+body {
+  background: url("../../assets/images/vietnam-beaches-lead.jpg");
 }
+
+h1 {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  padding: 10px 10px;
+  color: #000;
+}
+
+.navbar {
+  font-family: "Dosis", sans-serif;
+  font-size: 30px;
+  font-weight: 300;
+  background-color: #a5b9f3;
+  margin: 20px 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nav .li {
+  font-size: 20px;
+  font-weight: 200;
+  background-color: #a5b9f3;
+}
+
+p {
+  font-family: "Dosis", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+#map {
+  min-height: 360px;
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
