@@ -44,7 +44,8 @@ var markersOnMap = [{
   },
   {
     placeName: "<b>Dalat Hôtel du Parc (Dalat City)</b> <br>" +
-      '<b>Address:</b> 15 Đường Trần Phú, Phường 3, Thành phố Đà Lạt, Lâm Đồng, Vietnam',
+      '<b>Address:</b> 15 Đường Trần Phú, Phường 3, Thành phố Đà Lạt, Lâm Đồng, Vietnam. <br>' +
+      '<b>Four Star Hotel</b>: ☆☆☆☆  ',
     icon: 'pin.png',
     LatLng: [{
       lat: 11.9367,
@@ -53,7 +54,8 @@ var markersOnMap = [{
   },
   {
     placeName: "<b>Nhà gỗ - The Wooden House Restaurant (Dalat City)</b> <br>" +
-      '<b>Address:</b> 26 Đường Nguyễn Đình Chiểu, Phường 9, Thành phố Đà Lạt, Lâm Đồng, Vietnam',
+      '<b>Address:</b> 26 Đường Nguyễn Đình Chiểu, Phường 9, Thành phố Đà Lạt, Lâm Đồng, Vietnam. <br>' +
+      '<b>Four Star Restaurant<b> : ☆☆☆☆  ',
     icon: 'pin.png',
     LatLng: [{
       lat: 11.9505,
@@ -74,7 +76,8 @@ var markersOnMap = [{
   },
   {
     placeName: "<b>Beaulieu Boutique Hotel (Hue City)</b> <br>" +
-      '<b>Address:</b> 15 Pham Ngu Lao, Hue, Vietnam',
+      '<b>Address:</b> 15 Pham Ngu Lao, Hue, Vietnam. <br>' +
+      'Four Star Hotel: ☆☆☆☆   ',
     icon: 'pin.png',
     LatLng: [{
       lat: 16.4691,
@@ -83,7 +86,8 @@ var markersOnMap = [{
   },
   {
     placeName: "<b>Hanh Restaurant (Hue City)</b> <br>" +
-      '<b>Address:</b> 11 Đường Phó Đức Chính, Phú Hội, Tp. Huế, Phú Hội, Vietnam',
+      '<b>Address:</b> 11 Đường Phó Đức Chính, Phú Hội, Tp. Huế, Phú Hội, Vietnam. <br>' +
+      '<b> Rated 4.5 Stars:</b> ☆☆☆☆  ',
     icon: 'pin.png',
     LatLng: [{
       lat: 16.4663,
