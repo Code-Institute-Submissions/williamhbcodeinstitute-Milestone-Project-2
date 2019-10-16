@@ -4,13 +4,12 @@
 .background {
     background: url('../../assets/images/vietnam-beaches-lead.jpg');
     z-index: -1;
-    position: relative;
-    opacity: 0.5;
     
 }
 h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
+    
     font-weight: 300;
     padding: 10px 10px;
     color: #000;
@@ -22,7 +21,9 @@ h1 {
     font-family: 'Dosis', sans-serif;
     font-size: 30px;
     font-weight: 300;
+    color: 	#000000;
     background-color: #a5b9f3;
+    border: none;
     margin: 20px 10px;
     padding-left: 10px;
     padding-right: 10px;
@@ -36,8 +37,21 @@ h1 {
             font-weight: 200;
             background-color: #a5b9f3;
             
+            
+            
+        }
+        a {
+            font-size: 20px;
+            font-weight: 200;
+            background-color: #a5b9f3;
+            :hover {
+                background-color: red;
+            }
+            
         }
     }
+    
+
     
 p {
     font-family: 'Dosis', sans-serif;
@@ -46,9 +60,49 @@ p {
     
 }    
 
+.general-sub {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+
 #map {
     min-height: 360px;
     margin: 0;
     padding: 0;
+    
+}
+
+a .social-styles {
+    color: #f6f9ff;
+    margin: 10px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    border-radius: 70%;
+    background-color: #000;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+}
+
+a .social-styles:hover {
+    color: blue;
+    background-color: white;
+}
+
+@media(max-width: 989px){
+    a .social-styles{
+    color: #f6f9ff;
+    margin: 10px 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 30px;
+    border-radius: 70%;
+    background-color: #000;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 1s;
+    }
 }
 
