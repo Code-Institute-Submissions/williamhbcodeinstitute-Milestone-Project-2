@@ -210,7 +210,9 @@ function initMap() {
         map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
 
         // Bias the SearchBox results towards current map's viewport.
-      
+        map.addListener('bounds_changed', function() {
+          searchBox.setBounds(map.getBounds());
+        });
 
         var markers = [];
         // Listen for the event fired when the user selects a prediction and retrieve
