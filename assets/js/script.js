@@ -139,9 +139,9 @@ var markersOnMap = [{
   }
 ];
 
-window.onload = function() {
-  initMap();
-};
+//window.onload = function() {
+ // initMap();
+//};
 
 function addMarker() {
   var markers = [];
